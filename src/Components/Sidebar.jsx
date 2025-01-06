@@ -11,7 +11,7 @@ function Sidebar() {
                     <div className="sidebar-brand-icon rotate-n-15">
                         <i className="fas fa-laugh-wink"></i>
                     </div>
-                    <div className="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                    <div className="sidebar-brand-text mx-3">MS SANJITH DASHBOARD</div>
                 </Link>
 
                 {/* Divider */}
@@ -28,7 +28,7 @@ function Sidebar() {
                 {/* Divider */}
                 <hr className="sidebar-divider" />
 
-               
+
                 {/* Nav Item - Pages Collapse Menu */}
                 <li className="nav-item">
                     <Link to='/add-user' className="nav-link collapsed">

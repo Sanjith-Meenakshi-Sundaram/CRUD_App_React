@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'; // Import the Button component
 import { useNavigate } from 'react-router-dom';
+import {UserContext} from '../App'
 
-function Adduser({ user, setUser }) {
+function Adduser() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [dob, setDOB] = useState("");
     const [gender, setGender] = useState("");
     const [subscription, setSub] = useState(false);
+    const{user,setUser}=useContext(UserContext);
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {

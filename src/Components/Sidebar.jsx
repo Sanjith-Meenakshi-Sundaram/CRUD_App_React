@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Useref from './UseRef'
 
 function Sidebar() {
     return (
@@ -42,6 +43,18 @@ function Sidebar() {
                     <Link to='/profile' className="nav-link collapsed">
                         <i className="fas fa-fw fa-wrench"></i>
                         <span>Profile</span>
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to='/use-ref' className="nav-link collapsed">
+                        <i className="fas fa-fw fa-wrench"></i>
+                        <span>UseRef</span>
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to='/use-red' className="nav-link collapsed">
+                        <i className="fas fa-fw fa-wrench"></i>
+                        <span>UseReducer</span>
                     </Link>
                 </li>
 

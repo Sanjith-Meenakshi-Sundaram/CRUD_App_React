@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useNavigate, useParams } from 'react-router-dom';
 import { findIndexById } from '../Common/Helper';
+import { UserContext } from '../App';
 
-function Edituser({ user, setUser }) {
+
+function Edituser() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [dob, setDOB] = useState('');
     const [gender, setGender] = useState('');
     const [subscription, setSub] = useState(false);
 
+    const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();
     const { id } = useParams();
     const userId = Number(id);

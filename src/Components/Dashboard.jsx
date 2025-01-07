@@ -1,12 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import Cards from './Cards';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import {findIndexById} from '../Common/Helper'
 import {useNavigate} from 'react-router-dom'
+import {UserContext} from '../App'
 
-
-function Dashboard({ user, setUser }) { 
+function Dashboard() { 
+    let { user, setUser } = useContext(UserContext);
     // Use destructuring for props
     let navigate=useNavigate()
     const handleDelete=(id)=>{
